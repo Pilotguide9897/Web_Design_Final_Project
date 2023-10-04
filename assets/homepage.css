@@ -1,0 +1,13 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#logo {
+  width: 200px;
+}
+
+#title {
+  margin: 0px;
+}
