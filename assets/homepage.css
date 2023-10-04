@@ -37,6 +37,8 @@ main {
     cursor: pointer;
 }
 
+/* Dropdown styles */
+
 ul {
     overflow: hidden;
 }
@@ -45,5 +47,34 @@ li a, .dropDownBtn {
     display: inline-block;
     color: white;
     text-align: center;
-    padding 14px 16px'
+    padding: 14px 16px'
+}
+
+li a:hover, .dropdown:hover .dropDownBtn {
+    background-color: aqua;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdownContent a {
+    display: block;
+    text-align: left;
+}
+
+.dropdownContent a:hover {
+    background-color: #6f1a07;
+}
+
+.dropdownContent a:hover .dropdownContent {
+    display: block
 }
