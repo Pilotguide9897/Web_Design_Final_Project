@@ -22,13 +22,28 @@
 
 .nav-item {
     margin: 0px 15px;
-    background-color: #a8763e;
+    background-color: #6f1a07;
     color: #f7f3e3;
     padding: 5px;
+}
+
+main {
+    background-color: #bd803b;
 }
 
 .nav-item:hover {
     background-color: #bd803b;
     transform: scale(1.1);
     cursor: pointer;
+}
+
+ul {
+    overflow: hidden;
+}
+
+li a, .dropDownBtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding 14px 16px'
 }
