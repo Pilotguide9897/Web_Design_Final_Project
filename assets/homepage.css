@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  background-color: #ecf0f1;
 }
 
 #logo {
@@ -9,7 +10,27 @@
 }
 
 #title {
-  margin: 0px;
+  margin-right: auto;
+  color: #6f1a07;
+  font-size: 3.5em;
+}
+
+.nav-container {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item {
+    margin: 0px 15px;
+    background-color: #a8763e;
+    color: #f7f3e3;
+    padding: 5px;
+}
+
+.nav-item:hover {
+    background-color: #bd803b;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 *{
