@@ -33,7 +33,6 @@ main {
 
 .nav-item:hover {
   background-color: #bd803b;
-  /* transform: scale(1.1); This section is making the drop down mess up... */
   cursor: pointer;
 }
 
@@ -47,7 +46,6 @@ ul {
 
 li a,
 .dropDownBtn {
-  /* display: inline-block; */
   color: white;
   text-align: center;
   padding: 7px 16px;
@@ -64,6 +62,23 @@ li.dropdown {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
+
+/* Make the dropdowns align with their parent */
+.dropdownContent:nth-child(2) {
+    max-width: 154px;
+    transform: translateX(-5px);
+}
+
+#modernGameDropdown {
+    max-width: 233px;
+    transform: translateX(-5px);
+}
+
+#indieGameDropdown {
+    max-width: 116px;
+    transform: translateX(-5px);
+}
+
 
 .dropdownContent a {
   display: block;
