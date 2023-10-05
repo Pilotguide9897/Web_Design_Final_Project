@@ -16,65 +16,63 @@
 }
 
 .nav-container {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 .nav-item {
-    margin: 0px 15px;
-    background-color: #6f1a07;
-    color: #f7f3e3;
-    padding: 5px;
+  margin: 0px 15px;
+  background-color: #6f1a07;
+  color: #f7f3e3;
+  padding: 5px;
 }
 
 main {
-    background-color: #bd803b;
+  background-color: #bd803b;
 }
 
 .nav-item:hover {
-    background-color: #bd803b;
-    transform: scale(1.1);
-    cursor: pointer;
+  background-color: #bd803b;
+  /* transform: scale(1.1); This section is making the drop down mess up... */
+  cursor: pointer;
 }
 
 /* Dropdown styles */
 
 ul {
-    overflow: hidden;
+  overflow: hidden;
+  list-style-type: none;
+  padding: 0px;
 }
 
-li a, .dropDownBtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px'
-}
-
-li a:hover, .dropdown:hover .dropDownBtn {
-    background-color: aqua;
+li a,
+.dropDownBtn {
+  /* display: inline-block; */
+  color: white;
+  text-align: center;
+  padding: 7px 16px;
 }
 
 li.dropdown {
-    display: inline-block;
+  display: inline-block;
 }
 
 .dropdownContent {
-    /* display: none; */
-    position: absolute;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: #bd803b;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 .dropdownContent a {
-    display: block;
-    text-align: left;
+  display: block;
 }
 
 .dropdownContent a:hover {
-    background-color: #6f1a07;
+  background-color: #6f1a07;
 }
 
-.dropdownContent a:hover .dropdownContent {
-    display: block
+li.dropdown:hover .dropdownContent {
+  display: block;
 }
