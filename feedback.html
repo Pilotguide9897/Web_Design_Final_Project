@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/feedback.css">
     <link rel="stylesheet" href="./assets/homepage.css" />
     <script src="https://kit.fontawesome.com/ae9a5f9792.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
     <title>Feedback</title>
   </head>
   <body>
@@ -70,7 +72,51 @@
         </li>
       </ul>
     </header>
-    <footer> 
+    <main>
+      <div id="feedbackFormContainer">
+        <form>
+          <fieldset id="feedbackFormCard">
+            <h2>Review Our Site!</h2><br><br>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="userEmail" required><br><br>
+            <div class="radioContainer">
+            <legend>How would you rate your experience with our site?</legend>
+            <label for="Very Poor">Very Poor</label>
+            <input type="radio"><br><br>
+            <label for="Very Poor">Poor</label>
+            <input type="radio"><br><br>
+            <label for="Very Poor">Fine</label>
+            <input type="radio"><br><br>
+            <label for="Very Poor">Okay</label>
+            <input type="radio"><br><br>
+            <label for="Very Poor">Great</label>
+            <input type="radio"><br><br>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <textarea name="feedbackComments" rows="7" cols="60">Write your comments here!</textarea><br><br>
+            <button>Submit</button>
+          </fieldset>
+        </form>
+        <div >        
+      </div>
+      </div>
+    </main>
+     <footer> 
       <div class="footer.container"> 
       <div class="socailIcons"> 
         <a href=""><i class="fa-brands fa-facebook"></i></a>
