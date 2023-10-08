@@ -1,0 +1,14 @@
+#feedbackFormContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#feedbackFormCard {
+    width: 800px;
+    text-align: center;
+}
+
+.radioContainer {
+    display: flex;
+    gap: 10px;
+}
