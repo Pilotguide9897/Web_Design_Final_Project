@@ -23,17 +23,32 @@ float: left;}
 hr{
     background-color: #6f1a07;
     border: solid 1px #6f1a07;
+    height: 1px;
   
 }
-.vl {
+.vlr {
+    border-left: 2px solid #6f1a07;
+    height: 280px;
+    position: absolute;
+    left: 40%;
+    margin-left: 3px;
+    top: 0;
+    margin-top: 222px;
+  }
+  h3{
+    color: #6f1a07;
+  }
+  .rust{
+    padding-bottom: 20px;
+  }
+  .vl {
     border-left: 2px solid #6f1a07;
     height: 260px;
     position: absolute;
     left: 40%;
     margin-left: 3px;
     top: 0;
-    margin-top: 200px;
-  }
-  h3{
-    color: #6f1a07;
-  }
+    margin-top: 200px;}
+    .rust{
+      
+    }
