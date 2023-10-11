@@ -141,7 +141,7 @@ footer {
   padding: 7px;
 }
 .socailIcons a:hover {
-  background-color: #111;
+  background-color: #bd803b;
   transition: 0.5s;
   opacity: 1;
 }
@@ -166,7 +166,7 @@ footer {
 }
 .footerNav ul li a:hover {
   opacity: 1;
-  color: #111;
+  color:#bd803b;
 }
 .footerBottom {
   background-color: #ecf0f1;
