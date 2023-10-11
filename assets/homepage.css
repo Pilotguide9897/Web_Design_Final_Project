@@ -172,3 +172,33 @@ footer {
 ul {
   color: #ecf0f1;
 }
+
+/* CSS Grid Layout */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  background-color: #ecf0f1;
+  text-align: center;
+  font-family: kanit;
+}
+
+.classics {
+  grid-column: 1;
+  justify-content: center;
+}
+
+.modern {
+  grid-column: 2;
+  justify-content: center;
+}
+
+.indie {
+  grid-column: 3;
+  justify-content: center;
+}
+
+.wrapper img {
+  width: 100%;
+}
