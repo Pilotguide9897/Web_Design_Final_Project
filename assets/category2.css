@@ -92,3 +92,12 @@ h3 {
   top: 0;
   margin-top: 230px;
 }
+.vlbf {
+  border-left: 2px solid #6f1a07;
+  height: 240px;
+  position: absolute;
+  left: 40%;
+  margin-left: 3px;
+  top: 0;
+  margin-top: 230px;
+}
