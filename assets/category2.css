@@ -43,12 +43,12 @@ h3 {
 }
 .vl {
   border-left: 2px solid #6f1a07;
-  height: 260px;
+  height: 240px;
   position: absolute;
   left: 40%;
   margin-left: 3px;
   top: 0;
-  margin-top: 200px;
+  margin-top: 210px;
 }
 .vlr6 {
   border-left: 2px solid #6f1a07;
@@ -76,10 +76,19 @@ h3 {
 }
 .vlrl {
   border-left: 2px solid #6f1a07;
-  height: 240px;
+  height: 230px;
   position: absolute;
   left: 40%;
   margin-left: 3px;
   top: 0;
-  margin-top: 200px;
+  margin-top: 210px;
+}
+.vld {
+  border-left: 2px solid #6f1a07;
+  height: 300px;
+  position: absolute;
+  left: 40%;
+  margin-left: 3px;
+  top: 0;
+  margin-top: 230px;
 }
