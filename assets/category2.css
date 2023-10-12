@@ -1,73 +1,85 @@
-*{
-    font-family: kanit;
+* {
+  font-family: kanit;
 }
-img{
-width: 600px;
-margin-left: 15px;
-margin-right: 15px;
-float: left;
-padding: 15px;
+img {
+  width: 600px;
+  margin-left: 15px;
+  margin-right: 15px;
+  float: left;
+  padding: 15px;
 }
-p{
-    color: #6f1a07;
+p {
+  color: #6f1a07;
 }
-h2{
-    color: #6f1a07;
-    font-weight: bold;
-    font-style: italic;
+h2 {
+  color: #6f1a07;
+  font-weight: bold;
+  font-style: italic;
 }
-.maininfo{
-    border-top: solid 2px #6f1a07;
-    border-bottom: solid 2px #6f1a07;
-float: left;}
-hr{
-    background-color: #6f1a07;
-    border: solid 1px #6f1a07;
-    height: 1px;
-  
+.maininfo {
+  border-top: solid 2px #6f1a07;
+  border-bottom: solid 2px #6f1a07;
+  float: left;
+}
+hr {
+  background-color: #6f1a07;
+  border: solid 1px #6f1a07;
+  height: 1px;
 }
 .vlr {
-    border-left: 2px solid #6f1a07;
-    height: 280px;
-    position: absolute;
-    left: 40%;
-    margin-left: 3px;
-    top: 0;
-    margin-top: 222px;
-  }
-  h3{
-    color: #6f1a07;
-  }
-  .rust{
-    padding-bottom: 20px;
-  }
-  .vl {
-    border-left: 2px solid #6f1a07;
-    height: 260px;
-    position: absolute;
-    left: 40%;
-    margin-left: 3px;
-    top: 0;
-    margin-top: 200px;}
-    .vlr6 {
-      border-left: 2px solid #6f1a07;
-      height: 160px;
-      position: absolute;
-      left: 40%;
-      margin-left: 3px;
-      top: 0;
-      margin-top: 210px;}   
-      .r6{
-       width: 999x;
-      }
-      .vlgta {
-        border-left: 2px solid #6f1a07;
-        height: 180px;
-        position: absolute;
-        left: 40%;
-        margin-left: 3px;
-        top: 0;
-        margin-top: 225px;}   
-        .r6{
-         width: 999x;
-        }
+  border-left: 2px solid #6f1a07;
+  height: 280px;
+  position: absolute;
+  left: 40%;
+  margin-left: 3px;
+  top: 0;
+  margin-top: 222px;
+}
+h3 {
+  color: #6f1a07;
+}
+.rust {
+  padding-bottom: 20px;
+}
+.vl {
+  border-left: 2px solid #6f1a07;
+  height: 260px;
+  position: absolute;
+  left: 40%;
+  margin-left: 3px;
+  top: 0;
+  margin-top: 200px;
+}
+.vlr6 {
+  border-left: 2px solid #6f1a07;
+  height: 160px;
+  position: absolute;
+  left: 40%;
+  margin-left: 3px;
+  top: 0;
+  margin-top: 210px;
+}
+.r6 {
+  width: 999x;
+}
+.vlgta {
+  border-left: 2px solid #6f1a07;
+  height: 180px;
+  position: absolute;
+  left: 40%;
+  margin-left: 3px;
+  top: 0;
+  margin-top: 225px;
+}
+.r6 {
+  width: 999x;
+}
+.vlrl {
+  border-left: 2px solid #6f1a07;
+  height: 240px;
+  position: absolute;
+  left: 40%;
+  margin-left: 3px;
+  top: 0;
+  margin-top: 200px;
+}
