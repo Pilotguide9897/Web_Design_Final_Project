@@ -223,3 +223,22 @@
     top: 0;
     margin-top: 205px;
   }
+  .vlsd {
+    border-left: 2px solid #95a78d;
+    height: 260px;
+    position: absolute;
+    left: 40%;
+    margin-left: 3px;
+    top: 0;
+    margin-top: 210px;
+  }
+  .vlv {
+    border-left: 2px solid #95a78d;
+    height: 320px;
+    position: absolute;
+    left: 40%;
+    margin-left: 3px;
+    top: 0;
+    margin-top: 210px;
+  }
+  
