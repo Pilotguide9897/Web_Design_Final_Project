@@ -8,7 +8,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* background-color: #ecf0f1; */
   background-color: #ecf0f1;
 }
 
@@ -32,7 +31,6 @@
 .nav-item {
   margin: 0px 15px;
   background-color: #6f1a07;
-  /* color: #f7f3e3; */
   color: #ecf0f1;
   padding: 5px;
   border-top-right-radius: 8px;
@@ -202,3 +200,4 @@ ul {
 .wrapper img {
   width: 100%;
 }
+
