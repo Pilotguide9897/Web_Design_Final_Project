@@ -64,101 +64,74 @@
   grid-row: 4;
 }
 
-/* Navbar Styles */
+/* Navbar Styles Start */
+      #main {
+        list-style-type: none;
+        list-style-position: inside;
+        margin: 0;
+        padding: 0;
+        float: right;
+      }
 
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: #ecf0f1;
-}
+      #main > li {
+        position: relative;
+        font-size: 1em;
+        font-family: sans-serif;
+        width: 150px;
+        text-align: center;
+        background-color: #6f1a07;
+        padding: 7px 5px;
+        border: solid thin #f7f3e3;
+        border-collapse: collapse;
+        float: left;
+        border-top-right-radius: 20px;
+        margin-left: 25px;
+      }
 
-#logo {
-  width: 200px;
-}
+      #main > li:last-child {
+        margin-right: 25px;
+      }
 
-#title {
-  margin-right: auto;
-  color: #6f1a07;
-  font-size: 3.5em;
-  transform: translateX(-35px);
-  font-family: kanit;
-}
+      #main li > ul {
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        /* left: 8; */
+        display: none;
+        background-color: #6f1a07;
+        transform: translateX(-3.2%);
+        z-index: 1000;
+      }
 
-.nav-container {
-  list-style: none;
-  display: flex;
-}
+      #main ul {
+        list-style-type: none;
+        list-style-position: inside;
+        margin: 0;
+        padding: 20px;
+      }
 
-.nav-item {
-  margin: 0px 15px;
-  background-color: #6f1a07;
-  /* color: #f7f3e3; */
-  color: #ecf0f1;
-  padding: 5px;
-  border-top-right-radius: 8px;
-}
+      #main ul li {
+        /* width: 100px; */
+        text-align: center;
+        background-color: #a8763e;
+        padding: 10px;
+        border: solid thin #f7f3e3;
+        border-collapse: collapse;
 
-.nav-item:hover {
-  background-color: #bd803b;
-  cursor: pointer;
-}
+      }
 
-/* Dropdown styles */
+      #main > li:hover > ul {
+        display: block;
+      }
 
-ul {
-  overflow: hidden;
-  list-style-type: none;
-  padding: 0px;
-}
+      a {
+        text-decoration: none;
+        font-family: kanit;
+        color: #ecf0f1;
+      }
 
-li a,
-.dropDownBtn {
-  color: white;
-  text-align: center;
-  padding: 7px 16px;
-}
-
-li.dropdown {
-  display: inline-block;
-}
-
-.dropdownContent {
-  display: none;
-  position: absolute;
-  background-color: #bd803b;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-/* Make the dropdowns align with their parent */
-.dropdownContent:nth-child(2) {
-  max-width: 154px;
-  transform: translateX(-5px);
-}
-
-#modernGameDropdown {
-  max-width: 233px;
-  transform: translateX(-5px);
-}
-
-#indieGameDropdown {
-  max-width: 116px;
-  transform: translateX(-5px);
-}
-
-.dropdownContent a {
-  display: block;
-}
-
-.dropdownContent a:hover {
-  background-color: #6f1a07;
-}
-
-li.dropdown:hover .dropdownContent {
-  display: block;
-}
-
-a {
-  text-decoration: none;
-}
+      header a:hover {
+        color: #2b2118;
+        font-weight: bold;
+      }
+      /* Navbar Styles */
