@@ -1,4 +1,5 @@
-const gameTitle = document.getElementById("")
+// const gameTitle = document.getElementById("")
+// gameTitle.textContent = 
 
 const apiKey = "7f48b16c6de34092abdc24716b96cdad";
 
