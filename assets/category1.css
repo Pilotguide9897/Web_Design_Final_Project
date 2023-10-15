@@ -1,3 +1,4 @@
+
 .footerContainer{
     width: 100%;
     padding: 70px 30px 20px;
@@ -56,4 +57,210 @@ ul{color: #ecf0f1;}
 footer{
     background-color: #ECF0F1;
   }
+  * {
+    font-family: Montserrat;
+  }
+  img {
+    width: 600px;
+    margin-left: 15px;
+    margin-right: 15px;
+    float: left;
+    padding: 15px;
+  }
+  p {
+    color: #3f334d;
+  }
+  h2 {
+    color: #7d8491;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .maininfo {
+    border-top: solid 2px #3f334d;
+    border-bottom: solid 2px #3f334d;
+    float: left;
+  }
+  hr {
+    background-color: #3f334d;
+    border: solid 1px #3f334d;
+    height: 1px;
+  }
+  .vlr {
+    border-left: 2px solid #7d8491;
+    height: 330px;
+    position: absolute;
+    left: 40%;
+    margin-left: 3px;
+    top: 0;
+    margin-top: 205px;
+  }
+  h3 {
+    color: #7d8491;
+  }
+  #title {
+    margin-right: auto;
+    color: #3f334d;
+    font-size: 3.5em;
+    transform: translateX(-35px);
+    font-family: kanit;
+  }
   
+  .nav-container {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-item {
+    margin: 0px 15px;
+    background-color: #3f334d;
+    /* color: #f7f3e3; */
+    color: #ecf0f1;
+    padding: 5px;
+    border-top-right-radius: 8px;
+  }
+  
+  main {
+    background-color: #95a78d;
+  }
+  
+  .nav-item:hover {
+    background-color: #7d8491;
+    cursor: pointer;
+  }
+  
+  /* Dropdown styles */
+  
+  ul {
+    overflow: hidden;
+    list-style-type: none;
+    padding: 0px;
+  }
+  
+  li a,
+  .dropDownBtn {
+    color: white;
+    text-align: center;
+    padding: 7px 16px;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #3f334d;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  /* Make the dropdowns align with their parent */
+  .dropdownContent:nth-child(2) {
+    max-width: 154px;
+    transform: translateX(-5px);
+  }
+  
+  #modernGameDropdown {
+    max-width: 233px;
+    transform: translateX(-5px);
+  }
+  
+  #indieGameDropdown {
+    max-width: 116px;
+    transform: translateX(-5px);
+  }
+  
+  .dropdownContent a {
+    display: block;
+  }
+  
+  .dropdownContent a:hover {
+    background-color: #7d8491;
+  }
+  
+  li.dropdown:hover .dropdownContent {
+    display: block;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* Footer styles */
+  footer {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+  }
+  
+  footer {
+    background-color: #ecf0f1;
+    font-family: kanit;
+    
+  }
+  .footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+  }
+  .socailIcons {
+    display: flex;
+    justify-content: center;
+  }
+  .socailIcons a {
+    text-decoration: none;
+    background-color: #3f334d;
+    margin: 20px;
+    border-radius: 50%;
+    color: white;
+    padding: 7px;
+  }
+  .socailIcons a:hover {
+    background-color: #7d8491;
+    transition: 0.5s;
+    opacity: 1;
+  }
+  .socailIcons a:hover i {
+    color: white;
+    transition: 0.5s;
+  }
+  .footerNav {
+    margin: 30px 0;
+  }
+  .footerNav ul {
+    display: flex;
+    justify-content: center;
+  }
+  .footerNav ul li a {
+    color: #3f334d;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1em;
+    opacity: 0.7;
+    transition: 0.1s;
+  }
+  .footerNav ul li a:hover {
+    opacity: 1;
+    color:#3f334d;
+  }
+  .footerBottom {
+    background-color: #ecf0f1;
+    padding: 2px;
+    text-align: center;
+  }
+  .footerBottom p {
+    color: #3f334d;
+  }
+  ul {
+    color: #3f334d;
+  }
+  .vlr {
+    border-left: 2px solid #3f334d;
+    height: 330px;
+    position: absolute;
+    left: 40%;
+    margin-left: 3px;
+    top: 0;
+    margin-top: 205px;
+  }
