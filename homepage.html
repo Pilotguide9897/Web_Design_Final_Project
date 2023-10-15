@@ -14,6 +14,250 @@
     />
 
     <title>Gamer's Grimoire</title>
+
+    <style>
+       @keyframes tonext {
+        75% {
+          left: 0;
+        }
+        95% {
+          left: 100%;
+        }
+        98% {
+          left: 100%;
+        }
+        99% {
+          left: 0;
+        }
+      }
+
+      @keyframes tostart {
+        75% {
+          left: 0;
+        }
+        95% {
+          left: -300%;
+        }
+        98% {
+          left: -300%;
+        }
+        99% {
+          left: 0;
+        }
+      }
+
+      @keyframes snap {
+        96% {
+          scroll-snap-align: center;
+        }
+        97% {
+          scroll-snap-align: none;
+        }
+        99% {
+          scroll-snap-align: none;
+        }
+        100% {
+          scroll-snap-align: center;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+        scrollbar-color: transparent transparent; /* thumb and track color */
+        scrollbar-width: 0px;
+      }
+
+
+
+      *::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      *::-webkit-scrollbar-thumb {
+        background: transparent;
+        border: none;
+      }
+
+      * {
+        -ms-overflow-style: none;
+      }
+
+      ol,
+      li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .carousel {
+        position: relative;
+        padding-top: 45%;
+        filter: drop-shadow(0 0 10px #0003);
+        perspective: 100px;
+      }
+
+      .carouselViewport {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        overflow-x: scroll;
+        counter-reset: item;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+      }
+
+      .carouselSlide {
+        position: relative;
+        flex: 0 0 100%;
+        width: 100%;
+        counter-increment: item;
+      }
+
+      .carouselSlide:before {
+        content: counter(item);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -40%, 70px);
+        color: #fff;
+        font-size: 2em;
+      }
+
+      .carouselSnapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        scroll-snap-align: center;
+      }
+
+      @media (hover: hover) {
+        .carouselSnapper {
+          animation-name: tonext, snap;
+          animation-timing-function: ease;
+          animation-duration: 4s;
+          animation-iteration-count: infinite;
+        }
+
+        .carouselSlide:last-child .carouselSnapper {
+          animation-name: tostart, snap;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .carouselSnapper {
+          animation-name: none;
+        }
+      }
+
+      .carousel:hover .carouselSnapper,
+      .carousel:focus-within .carouselSnapper {
+        animation-name: none;
+      }
+
+      .carouselNavigation {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+      }
+
+      .carouselNavigationList,
+      .carouselNavigationItem {
+        display: inline-block;
+      }
+
+      .carousel__navigation-button {
+        display: inline-block;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: #333;
+        background-clip: content-box;
+        border: 0.25rem solid transparent;
+        border-radius: 50%;
+        font-size: 0;
+        transition: transform 0.1s;
+      }
+
+      .carousel::after,
+      .carouselPrev
+      .carouselNext {
+        position: absolute;
+        top: 0;
+        margin-top: 21%;
+        width: 4rem;
+        height: 4rem;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        font-size: 0;
+        outline: 0;
+      }
+
+      .carousel::before {
+        position: absolute;
+        top: 0;
+        margin-top: 21%;
+        width: 4rem;
+        height: 4rem;
+        transform: translateX(50%);
+        border-radius: 50%;
+        font-size: 0;
+        outline: 0;
+      }
+
+      .carousel::before,
+      .carouselPrev {
+        left: -1rem;
+      }
+
+      .carousel::after,
+      .carouselNext {
+        right: -1rem;
+      }
+
+      .carousel::before,
+      .carousel::after {
+        content: "";
+        z-index: 1;
+        background-color: #333;
+        background-size: 1.5rem 1.5rem;
+        background-repeat: no-repeat;
+        background-position: center center;
+        color: #fff;
+        font-size: 2.5rem;
+        line-height: 4rem;
+        text-align: center;
+        pointer-events: none;
+      }
+
+      .carousel::before {
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
+      }
+
+      .carousel::after {
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+      }
+
+      #carouselSlide1 {
+        background-image: url(./assets/images/retroGamingWatercolor.png);
+        background-size: cover;
+      }
+
+      #carouselSlide2 {
+        background-image: url(./assets/images/modernAAA.png);
+        background-size: cover;
+      }
+
+      #carouselSlide3 {
+        background-image: url(./assets/images/indieSpirit.png);
+        background-size: cover;
+      }
+    </style>
   </head>
   <body>
     <header class="flex-container">
@@ -114,35 +358,58 @@
       </div>
     </div> -->
 
-    <div class="carousel">
-      <div class="carouselItem">
-        <h2>Modern "AAA" Masterpieces</h2>
-        <a href="./category1/certifiedClassics.html">
-          <img
-            src="./assets/images/retroGamingWatercolor.png"
-            alt="Classic Gaming Iconography"
-          />
-        </a>
-      </div>
-      <div class="carouselItem">
-        <h2>Modern "AAA" Masterpieces</h2>
-        <a href="./category2/modernMasterpieces.html">
-          <img
-            src="./assets/images/modernAAA.png"
-            alt="Modern AAA Gaming Iconography"
-          />
-        </a>
-      </div>
-      <div class="carouselItem">
-        <h2>Indie Gems</h2>
-        <a href="./category3/indieGems.html">
-          <img
-            src="./assets/images/indieSpirit.png"
-            alt="Indie Gaming Iconography"
-          />
-        </a>
-      </div>
-    </div>
+    <section class="carousel">
+      <ol class="carouselViewport">
+        <li id="carouselSlide1" tabindex="0" class="carouselSlide">
+          <div class="carouselSnapper">
+            <a href="#carouselSlide3" class="carouselPrev"
+              >Go to previous slide</a
+            >
+            <a href="#carouselSlide2" class="carouselNext">Go to next slide</a>
+          </div>
+        </li>
+
+        <li id="carouselSlide2" tabindex="1" class="carouselSlide">
+          <div class="carouselSnapper">
+            <a href="#carouselSlide1" class="carouselPrev"
+              >Go to previous slide</a
+            >
+            <a href="#carouselSlide3" class="carouselNext">Go to next slide</a>
+          </div>
+        </li>
+
+        <li id="carouselSlide3" tabindex="2" class="carouselSlide">
+          <div class="carouselSnapper">
+            <a href="#carouselSlide2" class="carouselPrev"
+              >Go to previous slide</a
+            >
+            <a href="#carouselSlide1" class="carouselNext">Go to next slide</a>
+          </div>
+        </li>
+      </ol>
+
+      <aside class="carouselNavigation">
+        <ol class="carouselNavigationList">
+          <li class="carouselNavigationItem">
+            <a href="#carouselSlide1" class="carousel__navigation-button"
+              >Go to slide 1</a
+            >
+          </li>
+
+          <li class="carouselNavigationItem">
+            <a href="#carouselSlide2" class="carousel__navigation-button"
+              >Go to slide 2</a
+            >
+          </li>
+
+          <li class="carouselNavigationItem">
+            <a href="#carouselSlide3" class="carousel__navigation-button"
+              >Go to slide 3</a
+            >
+          </li>
+        </ol>
+      </aside>
+    </section>
 
     <footer>
       <div class="footer.container">
