@@ -16,7 +16,82 @@
     <title>Gamer's Grimoire</title>
 
     <style>
-       @keyframes tonext {
+      /* Navbar Styles Start */
+      #main {
+        list-style-type: none;
+        list-style-position: inside;
+        margin: 0;
+        padding: 0;
+        float: right;
+      }
+
+      #main > li {
+        position: relative;
+        font-size: 1em;
+        font-family: sans-serif;
+        width: 150px;
+        text-align: center;
+        background-color: #6f1a07;
+        padding: 7px 5px;
+        border: solid thin #f7f3e3;
+        border-collapse: collapse;
+        float: left;
+        border-top-right-radius: 20px;
+        margin-left: 25px;
+      }
+
+      #main > li:last-child {
+        margin-right: 25px;
+      }
+
+      #main li > ul {
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        /* left: 8; */
+        display: none;
+        background-color: #6f1a07;
+        transform: translateX(-3.2%);
+        z-index: 1000;
+      }
+
+      #main ul {
+        list-style-type: none;
+        list-style-position: inside;
+        margin: 0;
+        padding: 20px;
+      }
+
+      #main ul li {
+        /* width: 100px; */
+        text-align: center;
+        background-color: #a8763e;
+        padding: 10px;
+        border: solid thin #f7f3e3;
+        border-collapse: collapse;
+
+      }
+
+      #main > li:hover > ul {
+        display: block;
+      }
+
+      a {
+        text-decoration: none;
+        font-family: kanit;
+        color: #ecf0f1;
+      }
+
+      header a:hover {
+        color: #2b2118;
+        font-weight: bold;
+      }
+
+      /* Navbar Styles End */
+
+      /* Carousel Styles Start */
+
+      @keyframes tonext {
         75% {
           left: 0;
         }
@@ -63,11 +138,9 @@
 
       * {
         box-sizing: border-box;
-        scrollbar-color: transparent transparent; /* thumb and track color */
+        scrollbar-color: transparent transparent;
         scrollbar-width: 0px;
       }
-
-
 
       *::-webkit-scrollbar-track {
         background: transparent;
@@ -113,11 +186,11 @@
         position: relative;
         flex: 0 0 100%;
         width: 100%;
-        counter-increment: item;
+        /* counter-increment: item; */
       }
 
       .carouselSlide:before {
-        content: counter(item);
+        /* content: counter(item); */
         position: absolute;
         top: 50%;
         left: 50%;
@@ -185,7 +258,7 @@
       }
 
       .carousel::after,
-      .carouselPrev
+      .carouselPrev, 
       .carouselNext {
         position: absolute;
         top: 0;
@@ -257,6 +330,9 @@
         background-image: url(./assets/images/indieSpirit.png);
         background-size: cover;
       }
+     
+
+      /*Carousel Styles End */
     </style>
   </head>
   <body>
@@ -268,95 +344,95 @@
           alt="Gamer's Grimoire Logo"
       /></a>
       <h1 id="title">Gamer's Grimoire</h1>
-      <ul class="nav-container">
+      <ul id="main">
         <li class="nav-item"><a href="./feedback.html">Feedback</a></li>
-        <li class="nav-item dropdown">
-          <a href="./category1/certifiedClassics.html" class="dropDownBtn"
-            >Certified Classics</a
-          >
-          <div class="dropdownContent">
-            <a href="./category1/items/donkeyKong.html">Donkey Kong</a>
-            <a href="./category1/items/megaMan.html">Mega Man</a>
-            <a href="./category1/items/pacMan.html">Pac-Man</a>
-            <a href="./category1/items/sonicTheHedgehog.html"
-              >Sonic the Hedgehog</a
-            >
-            <a href="./category1/items/streetFighter.html">Street Fighter II</a>
-            <a href="./category1/items/superMarioBros.html">Super Mario Bros</a>
-            <a href="./category1/items/tetris.html">Tetris</a>
-            <a href="./category1/items/legendOfZelda.html"
-              >The Legend of Zelda</a
-            >
-          </div>
+        <li>
+          <a href="pageOne.html">Classics</a>
+          <ul>
+            <li>
+              <a href="./category1/items/donkeyKong.html">Donkey Kong</a>
+            </li>
+            <li>
+              <a href="./category1/items/megaMan.html">Mega Man</a>
+            </li>
+            <li>
+              <a href="./category1/items/pacMan.html">Pac-Man</a>
+            </li>
+            <li>
+              <a href="./category1/items/sonicTheHedgehog.html"
+                >Sonic the Hedgehog</a
+              >
+            </li>
+            <li>
+              <a href="./category1/items/streetFighter.html"
+                >Street Fighter II</a
+              >
+            </li>
+            <li>
+              <a href="./category1/items/superMarioBros.html"
+                >Super Mario Bros</a
+              >
+            </li>
+            <li>
+              <a href="./category1/items/tetris.html">Tetris</a>
+            </li>
+            <li>
+              <a href="./category1/items/legendOfZelda.html"
+                >The Legend of Zelda</a
+              >
+            </li>
+          </ul>
         </li>
-        <li class="nav-item dropdown">
-          <a href="./category2/modernMasterpieces.html" class="dropDownBtn"
-            ><span>Modern "AAA" Masterpieces</span></a
-          >
-          <div class="dropdownContent" id="modernGameDropdown">
-            <a href="./category2/items/battlefield4.html">Battlefield 4</a>
-            <a href="./category2/items/counterStrikeGlobalOffensive.html"
-              >Counter Strike Global Offensive</a
-            >
-            <a href="./category2/items/destiny.html">Destiny</a>
-            <a href="./category2/items/grandTheftAuto5.html"
-              >Grand Theft Auto 5</a
-            >
-            <a href="./category2/items/rainbowSixSiege.html"
-              >Rainbow Six Siege</a
-            >
-            <a href="./category2/items/rocketLeague.html">Rocket League</a>
-            <a href="./category2/items/rust.html">Rust</a>
-            <a href="./category2/items/valorant.html">Valorant</a>
-          </div>
+        <li>
+          <a href="pageTwo.html">Modern AAA</a>
+          <ul>
+            <li>
+              <a href="./category2/items/battlefield4.html">Battlefield 4</a>
+            </li>
+            <li>
+              <a href="./category2/items/counterStrikeGlobalOffensive.html"
+                >Counter Strike Global Offensive</a
+              >
+            </li>
+            <li><a href="./category2/items/destiny.html">Destiny</a></li>
+            <li>
+              <a href="./category2/items/grandTheftAuto5.html"
+                >Grand Theft Auto 5</a
+              >
+            </li>
+            <li>
+              <a href="./category2/items/rainbowSixSiege.html"
+                >Rainbow Six Siege</a
+              >
+            </li>
+            <li>
+              <a href="./category2/items/rocketLeague.html">Rocket League</a>
+            </li>
+            <li><a href="./category2/items/rust.html">Rust</a></li>
+            <li><a href="./category2/items/valorant.html">Valorant</a></li>
+          </ul>
         </li>
-        <li class="nav-item dropdown">
-          <a href="./category3/indieGems.html" class="dropDownBtn"
-            ><span>Indie Gems</span></a
-          >
-          <div class="dropdownContent" id="indieGameDropdown">
-            <a href="./category3/items/battleBits.html">Battle Bits</a>
-            <a href="./category3/items/celeste.html">Celeste</a>
-            <a href="./category3/items/cuphead.html">Cuphead</a>
-            <a href="./category3/items/gunfireReborn.html">Gunfire Reborn</a>
-            <a href="./category3/items/hollowKnight.html">Hollow Knight</a>
-            <a href="./category3/items/stardewValley.html">Stardew Valley</a>
-            <a href="./category3/items/terraria.html">Terraria</a>
-            <a href="./category3/items/valheim.html">Valheim</a>
-          </div>
+        <li>
+          <a href="pageThree.html">Indie</a>
+          <ul>
+            <li><a href="./category3/items/battleBits.html">Battle Bits</a></li>
+            <li><a href="./category3/items/celeste.html">Celeste</a></li>
+            <li><a href="./category3/items/cuphead.html">Cuphead</a></li>
+            <li>
+              <a href="./category3/items/gunfireReborn.html">Gunfire Reborn</a>
+            </li>
+            <li>
+              <a href="./category3/items/hollowKnight.html">Hollow Knight</a>
+            </li>
+            <li>
+              <a href="./category3/items/stardewValley.html">Stardew Valley</a>
+            </li>
+            <li><a href="./category3/items/terraria.html">Terraria</a></li>
+            <li><a href="./category3/items/valheim.html">Valheim</a></li>
+          </ul>
         </li>
       </ul>
     </header>
-
-    <!-- <div class="wrapper">
-      <div class="classics">
-        <h2>Certified Classics</h2>
-        <a href="./category1/certifiedClassics.html">
-          <img
-            src="./assets/images/retroGamingWatercolor.png"
-            alt="Classic Gaming Iconography"
-          />
-        </a>
-      </div>
-      <div class="modern">
-        <h2>Modern "AAA" Masterpieces</h2>
-        <a href="./category2/modernMasterpieces.html">
-          <img
-            src="./assets/images/modernAAA.png"
-            alt="Modern AAA Gaming Iconography"
-          />
-        </a>
-      </div>
-      <div class="indie">
-        <h2>Indie Gems</h2>
-        <a href="./category3/indieGems.html">
-          <img
-            src="./assets/images/indieSpirit.png"
-            alt="Indie Gaming Iconography"
-          />
-        </a>
-      </div>
-    </div> -->
 
     <section class="carousel">
       <ol class="carouselViewport">
