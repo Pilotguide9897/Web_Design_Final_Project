@@ -135,3 +135,8 @@
         font-weight: bold;
       }
       /* Navbar Styles */
+
+      h2 {
+        margin-bottom: 10px;
+        font-family: 'Pixelify Sans', sans-serif;
+      }
