@@ -1,95 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../assets/homepage.css" />
-    <link rel="stylesheet" href="../../assets/category1.css" />
-    <link rel="stylesheet" href="../../assets/itemPages.css" />
-    <script src="https://kit.fontawesome.com/ae9a5f9792.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
-    <title>Pac-Man</title>
-  </head>
-  <body>
-    <header class="flex-container">
-      <a href="../../homepage.html"><img
-        src="../../assets/images/logo.png"
-        id="logo"
-        alt="Gamer's Grimoire Logo"
-      /></a>
-      <h1 id="title">Gamer's Grimoire</h1>
-      <ul class="nav-container">
-         <li class="nav-item"><a href="../../feedback.html">Feedback</a></li>
-        <li class="nav-item dropdown">
-          <a href="../certifiedClassics.html" class="dropDownBtn"
-            >Certified Classics</a
-          >
-          <div class="dropdownContent">
-            <a href="./donkeyKong.html">Donkey Kong</a>
-            <a href="./megaMan.html">Mega Man</a>
-            <a href="./pacMan.html">Pac-Man</a>
-            <a href="./sonicTheHedgehog.html">Sonic the Hedgehog</a>
-            <a href="./streetFighter.html">Street Fighter II</a>
-            <a href="./superMarioBros.html">Super Mario Bros</a>
-            <a href="./tetris.html">Tetris</a>
-            <a href="./legendOfZelda.html">The Legend of Zelda</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a href="../../category2/modernMasterpieces.html" class="dropDownBtn"
-            ><span>Modern "AAA" Masterpieces</span></a
-          >
-          <div class="dropdownContent" id="modernGameDropdown">
-            <a href="../../category2/items/battlefield4.html">Battlefield 4</a>
-            <a href="../../category2/items/counterStrikeGlobalOffensive.html"
-              >Counter Strike Global Offensive</a
-            >
-            <a href="../../category2/items/destiny.html">Destiny</a>
-            <a href="../../category2/items/grandTheftAuto5.html"
-              >Grand Theft Auto 5</a
-            >
-            <a href="../../category2/items/rainbowSixSiege.html"
-              >Rainbow Six Siege</a
-            >
-            <a href="../../category2/items/rocketLeague.html">Rocket League</a>
-            <a href="../../category2/items/rust.html">Rust</a>
-            <a href="../../category2/items/valorant.html">Valorant</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a href="../../category3/indieGems.html" class="dropDownBtn"
-            ><span>Indie Gems</span></a
-          >
-          <div class="dropdownContent" id="indieGameDropdown">
-            <a href="../../category3/items/battleBits.html">Battle Bits</a>
-            <a href="../../category3/items/celeste.html">Celeste</a>
-            <a href="../../category3/items/cuphead.html">Cuphead</a>
-            <a href="../../category3/items/gunfireReborn.html"
-              >Gunfire Reborn</a
-            >
-            <a href="../../category3/items/hollowKnight.html">Hollow Knight</a>
-            <a href="../../category3/items/stardewValley.html"
-              >Stardew Valley</a
-            >
-            <a href="../../category3/items/terraria.html">Terraria</a>
-            <a href="../../category3/items/valheim.html">Valheim</a>
-          </div>
-        </li>
-      </ul>
-    </header>
-    <footer> 
-      <div class="footer.container"> 
-      <div class="socailIcons"> 
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../assets/homepage.css" />
+  <link rel="stylesheet" href="../../assets/category1.css" />
+  <link rel="stylesheet" href="../../assets/itemPages.css" />
+  <script src="https://kit.fontawesome.com/ae9a5f9792.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&family=Montserrat&family=Onest:wght@500&family=Young+Serif&display=swap"
+    rel="stylesheet">
+  <title>Pac-Man</title>
+</head>
+
+<body>
+  <header class="flex-container">
+    <a href="../../homepage.html"><img src="../../assets/images/logo.png" id="logo" alt="Gamer's Grimoire Logo" /></a>
+    <h1 id="title">Gamer's Grimoire</h1>
+    <ul class="nav-container">
+      <li class="nav-item"><a href="../../feedback.html">Feedback</a></li>
+      <li class="nav-item dropdown">
+        <a href="../certifiedClassics.html" class="dropDownBtn">Certified Classics</a>
+        <div class="dropdownContent">
+          <a href="./donkeyKong.html">Donkey Kong</a>
+          <a href="./megaMan.html">Mega Man</a>
+          <a href="./pacMan.html">Pac-Man</a>
+          <a href="./sonicTheHedgehog.html">Sonic the Hedgehog</a>
+          <a href="./streetFighter.html">Street Fighter II</a>
+          <a href="./superMarioBros.html">Super Mario Bros</a>
+          <a href="./tetris.html">Tetris</a>
+          <a href="./legendOfZelda.html">The Legend of Zelda</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="../../category2/modernMasterpieces.html" class="dropDownBtn"><span>Modern "AAA" Masterpieces</span></a>
+        <div class="dropdownContent" id="modernGameDropdown">
+          <a href="../../category2/items/battlefield4.html">Battlefield 4</a>
+          <a href="../../category2/items/counterStrikeGlobalOffensive.html">Counter Strike Global Offensive</a>
+          <a href="../../category2/items/destiny.html">Destiny</a>
+          <a href="../../category2/items/grandTheftAuto5.html">Grand Theft Auto 5</a>
+          <a href="../../category2/items/rainbowSixSiege.html">Rainbow Six Siege</a>
+          <a href="../../category2/items/rocketLeague.html">Rocket League</a>
+          <a href="../../category2/items/rust.html">Rust</a>
+          <a href="../../category2/items/valorant.html">Valorant</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="../../category3/indieGems.html" class="dropDownBtn"><span>Indie Gems</span></a>
+        <div class="dropdownContent" id="indieGameDropdown">
+          <a href="../../category3/items/battleBits.html">Battle Bits</a>
+          <a href="../../category3/items/celeste.html">Celeste</a>
+          <a href="../../category3/items/cuphead.html">Cuphead</a>
+          <a href="../../category3/items/gunfireReborn.html">Gunfire Reborn</a>
+          <a href="../../category3/items/hollowKnight.html">Hollow Knight</a>
+          <a href="../../category3/items/stardewValley.html">Stardew Valley</a>
+          <a href="../../category3/items/terraria.html">Terraria</a>
+          <a href="../../category3/items/valheim.html">Valheim</a>
+        </div>
+      </li>
+    </ul>
+  </header>
+  <div class="container">
+    <div class="rust">
+      <img src="../../assets/Category game pictures/pacpman.png" alt="This is a photo of Pacman">
+    </div>
+    <div class="maininfo">
+
+
+      <h2>User reviews</h2>
+      <p><strong>- ProperLad</strong> "The best game in a generation
+        An old classic that few remember going to the arcade to play and compete to beat each other's high score. The
+        simplicity of the game was always getting down the patterns of the game. Having an element of greater difficulty
+        would give it a greater challenge."</p>
+      <p>
+        <strong>- DopeYeti</strong> "If you're longing for the good ol' days of storefront arcades, or if you want to
+        introduce your kids to the kind of old-school digital entertainment you grew up on, this mobile version of
+        PAC-MAN is the way to go. It plays exactly like the original, but manages to look better (thanks to 35 years of
+        graphic improvements). It's possible that the game might seem repetitive or overly simple to today's kids, but
+        the appeal of the ghost-eating challenge that made it a hit way back when still stands out. "
+      </p>
+      <p>
+        <strong>
+          - Charley Times
+        </strong>
+        " The perfect balance of retro and classic of early game days. The high pixelated graphics gives a perfect
+        feeling of what classic arcade games are about. Getting the highest score possible was always a challenge but
+        one I always got. Having more features that would make the game challenging such as predictability of the ghosts
+        and changing of the elements of the map."
+      </p>
+
+    </div>
+    <hr>
+    <div class="vlmm"></div>
+    <div>
+      <h2>PacMan</h2>
+      <h3>Nintendo, Released May 22, 1980</h3>
+      <p>
+        Pac-Man is a Japanese video game franchise developed, published and owned by Bandai Namco Entertainment, a
+        video game publisher that was previously known as Namco. Entries have been developed by a wide array of other
+        video game companies, including Midway Games, Atari and Mass Media, Inc., and was created by Toru Iwatani. The
+        eponymous first entry was released in arcades in 1980 by Namco, and published by Midway Games in North America.
+        Most Pac-Man games are maze chase games, but it has also delved into other genres, such as platformers, racing,
+        and sports. Several games in the series were released for a multitude of home consoles and are included in many
+        Bandai Namco video game compilations.
+
+        Pac-Man is one of the longest-running, best-selling, and highest-grossing video game franchises in history, and
+        the game has seen regular releases for over 40 years, has sold nearly 48 million copies across all of the
+        platforms, and has grossed over US$14 billion, most of which has been from the original arcade game. The
+        character of Pac-Man is the official mascot of Bandai Namco, and is one of the most recognizable video game
+        characters in history. The franchise has been seen as important and influential, and is often used as a
+        representation for 1980s popular culture and video games as a whole.
+        <a href="https://freepacman.org/">Click here
+          to learn more about PacMan!</a>
+      </p>
+    </div>
+  </div>
+  <footer>
+    <div class="footer.container">
+      <div class="socailIcons">
         <a href=""><i class="fa-brands fa-facebook"></i></a>
         <a href=""><i class="fa-brands fa-instagram"></i></a>
         <a href=""><i class="fa-brands fa-youtube"></i></a>
         <a href=""><i class="fa-brands fa-github"></i></a>
         <a href=""><i class="fa-brands fa-twitter"></i></a>
       </div>
-      
+
       <div class="footerBottom">
         <p>Copyright &copy;2023 all rights reserved. Gamer's Grimoire.</p>
       </div>
-      </footer>
-  </body>
+  </footer>
+</body>
+
 </html>
