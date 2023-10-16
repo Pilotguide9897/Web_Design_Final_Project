@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap"
       rel="stylesheet"
     />
+
     <title>Feedback</title>
   </head>
   <body>
@@ -119,30 +120,27 @@
           <fieldset id="feedbackFormCard">
             <h2>Review Our Site!</h2>
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" /><br>
+            <input type="text" id="name" name="name" placeholder="John Smith"/><br />
             <label for="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="userEmail"
-              required
-            /><br />
+            <input type="email" id="email" name="userEmail" required placeholder="yourname@email.com"/><br />
             <h4>How would you rate your experience with our site?</h4>
             <div class="radioContainer">
               <label for="Very Poor">Very Poor</label>
-              <input type="radio" name="Site Rating"/><br /><br />
+              <input type="radio" name="Site Rating" /><br /><br />
               <label for="Very Poor">Poor</label>
-              <input type="radio" name="Site Rating"/><br /><br />
+              <input type="radio" name="Site Rating" /><br /><br />
               <label for="Very Poor">Fine</label>
-              <input type="radio" name="Site Rating"/><br /><br />
+              <input type="radio" name="Site Rating" /><br /><br />
               <label for="Very Poor">Okay</label>
-              <input type="radio" name="Site Rating"/><br /><br />
+              <input type="radio" name="Site Rating" /><br /><br />
               <label for="Very Poor">Great</label>
-              <input type="radio" name="Site Rating"/><br /><br />
+              <input type="radio" name="Site Rating" /><br /><br />
             </div>
 
-            <span class="inputLabel">Select a game page that you want to leave a comment about:</span>
-            <select  name="itemComment" id="itemComment">
+            <span class="inputLabel"
+              >Select a game page that you want to leave a comment about:</span
+            >
+            <select name="itemComment" id="itemComment">
               <option value="Donkey Kong">Donkey Kong</option>
               <option value="Mega Man">Mega Man</option>
               <option value="PacMan">PacMan</option>
@@ -152,7 +150,9 @@
               <option value="Tetris">Tetris</option>
               <option value="The Legend of Zelda">The Legend of Zelda</option>
               <option value="Battlefield 4">Battlefield 4</option>
-              <option value="Counter Strike Global Offensive">Counter Strike GO</option>
+              <option value="Counter Strike Global Offensive">
+                Counter Strike GO
+              </option>
               <option value="Destiny">Destiny</option>
               <option value="Grand Theft Auto V">Grand Theft Auto V</option>
               <option value="Rainbow Six Siege">Rainbow Six Siege</option>
@@ -169,7 +169,12 @@
               <option value="Valheim">Valheim</option>
             </select>
 
-            <textarea name="feedbackComments" rows="7" cols="60"> Write your comments here!</textarea
+            <textarea
+              name="feedbackComments"
+              rows="7"
+              cols="60"
+              placeholder="Write your comments here!"
+            ></textarea
             ><br /><br />
             <button type="submit" id="feedbackSubmitBtn">Submit</button>
           </fieldset>
