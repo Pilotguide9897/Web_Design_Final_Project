@@ -1,96 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../assets/homepage.css" />
-    <link rel="stylesheet" href="../../assets/category1.css" />
-    <link rel="stylesheet" href="../../assets/itemPages.css" />
-    <script src="https://kit.fontawesome.com/ae9a5f9792.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
-    
-    <title>Tetris</title>
-  </head>
-  <body>
-    <header class="flex-container">
-      <a href="../../homepage.html"><img
-        src="../../assets/images/logo.png"
-        id="logo"
-        alt="Gamer's Grimoire Logo"
-      /></a>
-      <h1 id="title">Gamer's Grimoire</h1>
-      <ul class="nav-container">
-         <li class="nav-item"><a href="../../feedback.html">Feedback</a></li>
-        <li class="nav-item dropdown">
-          <a href="../certifiedClassics.html" class="dropDownBtn"
-            >Certified Classics</a
-          >
-          <div class="dropdownContent">
-            <a href="./donkeyKong.html">Donkey Kong</a>
-            <a href="./megaMan.html">Mega Man</a>
-            <a href="./pacMan.html">Pac-Man</a>
-            <a href="./sonicTheHedgehog.html">Sonic the Hedgehog</a>
-            <a href="./streetFighter.html">Street Fighter II</a>
-            <a href="./superMarioBros.html">Super Mario Bros</a>
-            <a href="./tetris.html">Tetris</a>
-            <a href="./legendOfZelda.html">The Legend of Zelda</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a href="../../category2/modernMasterpieces.html" class="dropDownBtn"
-            ><span>Modern "AAA" Masterpieces</span></a
-          >
-          <div class="dropdownContent" id="modernGameDropdown">
-            <a href="../../category2/items/battlefield4.html">Battlefield 4</a>
-            <a href="../../category2/items/counterStrikeGlobalOffensive.html"
-              >Counter Strike Global Offensive</a
-            >
-            <a href="../../category2/items/destiny.html">Destiny</a>
-            <a href="../../category2/items/grandTheftAuto5.html"
-              >Grand Theft Auto 5</a
-            >
-            <a href="../../category2/items/rainbowSixSiege.html"
-              >Rainbow Six Siege</a
-            >
-            <a href="../../category2/items/rocketLeague.html">Rocket League</a>
-            <a href="../../category2/items/rust.html">Rust</a>
-            <a href="../../category2/items/valorant.html">Valorant</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a href="../../category3/indieGems.html" class="dropDownBtn"
-            ><span>Indie Gems</span></a
-          >
-          <div class="dropdownContent" id="indieGameDropdown">
-            <a href="../../category3/items/battleBits.html">Battle Bits</a>
-            <a href="../../category3/items/celeste.html">Celeste</a>
-            <a href="../../category3/items/cuphead.html">Cuphead</a>
-            <a href="../../category3/items/gunfireReborn.html"
-              >Gunfire Reborn</a
-            >
-            <a href="../../category3/items/hollowKnight.html">Hollow Knight</a>
-            <a href="../../category3/items/stardewValley.html"
-              >Stardew Valley</a
-            >
-            <a href="../../category3/items/terraria.html">Terraria</a>
-            <a href="../../category3/items/valheim.html">Valheim</a>
-          </div>
-        </li>
-      </ul>
-    </header>
-    <footer> 
-      <div class="footer.container"> 
-      <div class="socailIcons"> 
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../assets/homepage.css" />
+  <link rel="stylesheet" href="../../assets/category1.css" />
+  <link rel="stylesheet" href="../../assets/itemPages.css" />
+  <script src="https://kit.fontawesome.com/ae9a5f9792.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&family=Montserrat&family=Onest:wght@500&family=Young+Serif&display=swap"
+    rel="stylesheet">
+
+  <title>Tetris</title>
+</head>
+
+<body>
+  <header class="flex-container">
+    <a href="../../homepage.html"><img src="../../assets/images/logo.png" id="logo" alt="Gamer's Grimoire Logo" /></a>
+    <h1 id="title">Gamer's Grimoire</h1>
+    <ul class="nav-container">
+      <li class="nav-item"><a href="../../feedback.html">Feedback</a></li>
+      <li class="nav-item dropdown">
+        <a href="../certifiedClassics.html" class="dropDownBtn">Certified Classics</a>
+        <div class="dropdownContent">
+          <a href="./donkeyKong.html">Donkey Kong</a>
+          <a href="./megaMan.html">Mega Man</a>
+          <a href="./pacMan.html">Pac-Man</a>
+          <a href="./sonicTheHedgehog.html">Sonic the Hedgehog</a>
+          <a href="./streetFighter.html">Street Fighter II</a>
+          <a href="./superMarioBros.html">Super Mario Bros</a>
+          <a href="./tetris.html">Tetris</a>
+          <a href="./legendOfZelda.html">The Legend of Zelda</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="../../category2/modernMasterpieces.html" class="dropDownBtn"><span>Modern "AAA" Masterpieces</span></a>
+        <div class="dropdownContent" id="modernGameDropdown">
+          <a href="../../category2/items/battlefield4.html">Battlefield 4</a>
+          <a href="../../category2/items/counterStrikeGlobalOffensive.html">Counter Strike Global Offensive</a>
+          <a href="../../category2/items/destiny.html">Destiny</a>
+          <a href="../../category2/items/grandTheftAuto5.html">Grand Theft Auto 5</a>
+          <a href="../../category2/items/rainbowSixSiege.html">Rainbow Six Siege</a>
+          <a href="../../category2/items/rocketLeague.html">Rocket League</a>
+          <a href="../../category2/items/rust.html">Rust</a>
+          <a href="../../category2/items/valorant.html">Valorant</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="../../category3/indieGems.html" class="dropDownBtn"><span>Indie Gems</span></a>
+        <div class="dropdownContent" id="indieGameDropdown">
+          <a href="../../category3/items/battleBits.html">Battle Bits</a>
+          <a href="../../category3/items/celeste.html">Celeste</a>
+          <a href="../../category3/items/cuphead.html">Cuphead</a>
+          <a href="../../category3/items/gunfireReborn.html">Gunfire Reborn</a>
+          <a href="../../category3/items/hollowKnight.html">Hollow Knight</a>
+          <a href="../../category3/items/stardewValley.html">Stardew Valley</a>
+          <a href="../../category3/items/terraria.html">Terraria</a>
+          <a href="../../category3/items/valheim.html">Valheim</a>
+        </div>
+      </li>
+    </ul>
+  </header>
+  <div class="container">
+    <div class="rust">
+      <img src="../../assets/Category game pictures/tetris.png" alt="This is a photo of Super Mario">
+    </div>
+    <div class="maininfo">
+
+
+      <h2>User reviews</h2>
+      <p><strong>- Category88</strong> "I am a long time fan and competitive player of Tetris games, and this is by far my
+        favorite version. The game has a wide variety of single player modes which range from relaxing to insanely
+        challenging, and the Connected multiplayer expansion contains the best multiplayer Tetris I've ever experienced.
+        There is also Classic Tetris head-to-head, similar to the Classic Tetris World Championships!"
+      </p>
+      <p>
+        <strong>- Carolyn</strong> "This game is great and I would recommend it to anyone. The story mode can be a
+        bit challenging but its such a fun and emotional experience to play through the levels with their music. Some of
+        the songs almost bring me to tears each time I play through them. I would also definitely recommend playing this
+        in VR as it just enhances everything so much more and allows you to enter a flow with the game."
+      </p>
+      <p>
+        <strong>
+          - iphonevsSamsung
+        </strong>
+        " Looking for a teris experience that really gives you a new experience, that will give experienced players a
+        run for their money.
+
+        Look no further.
+
+        Innovative level design, beautiful graphics and awesome soundscapes."
+      </p>
+
+    </div>
+    <hr>
+    <div class="vltt"></div>
+    <div>
+      <h2>Tetris</h2>
+      <h3>Sega, Released June 6, 1984</h3>
+      <p>
+        In Tetris, players complete lines by moving differently shaped pieces (tetrominoes), which descend onto the
+        playing field. The completed lines disappear and grant the player points, and the player can proceed to fill the
+        vacated spaces. The game ends when the uncleared lines reach the top of the playing field. The longer the player
+        can delay this outcome, the higher their score will be. In multiplayer games, players must last longer than
+        their opponents; in certain versions, players can inflict penalties on opponents by completing a significant
+        number of lines. Some versions add variations on the rules, such as three-dimensional displays or a system for
+        reserving pieces.
+
+        Built on simple rules, Tetris established itself as one of the greatest video games ever made. By December 2011,
+        it had sold 202 million copies approximately 70 million physical units and 132 million paid mobile game
+        downloads making it one of the best-selling video game franchises. The Game Boy version is one of the
+        best-selling games of all time, with more than 35 million copies sold. Tetris is available on over 65 platforms,
+        setting a Guinness world record for the most ported video game. Tetris is rooted within popular culture and its
+        popularity extends beyond the sphere of video games; imagery from the game has influenced architecture, music,
+        and cosplay. Tetris is primarily composed of a field of play in which pieces of different geometric forms,
+        called "tetrominoes", descend from the top of the field. During this descent, the player can move the pieces
+        laterally and rotate them until they touch the bottom of the field or land on a piece that had been placed
+        before it. The player can neither slow down the falling pieces nor stop them, but can accelerate them, in
+        most versions.
+        <a href="https://tetris.com/play-tetris">Click here
+          to learn more about Tetris</a>
+      </p>
+    </div>
+  </div>
+  <footer>
+    <div class="footer.container">
+      <div class="socailIcons">
         <a href=""><i class="fa-brands fa-facebook"></i></a>
         <a href=""><i class="fa-brands fa-instagram"></i></a>
         <a href=""><i class="fa-brands fa-youtube"></i></a>
         <a href=""><i class="fa-brands fa-github"></i></a>
         <a href=""><i class="fa-brands fa-twitter"></i></a>
       </div>
-      
+
       <div class="footerBottom">
         <p>Copyright &copy;2023 all rights reserved. Gamer's Grimoire.</p>
       </div>
-      </footer>
-  </body>
+  </footer>
+</body>
+
 </html>
