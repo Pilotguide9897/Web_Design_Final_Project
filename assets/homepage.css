@@ -13,12 +13,11 @@ Body{
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* background-color: #ecf0f1; */
   background-color: #ecf0f1;
 }
 
 #logo {
-  width: 200px;
+  width: 300px;
 }
 
 #title {
@@ -27,89 +26,7 @@ Body{
   font-size: 3.5em;
   transform: translateX(-35px);
   font-family: kanit;
-}
-
-.nav-container {
-  list-style: none;
-  display: flex;
-}
-
-.nav-item {
-  margin: 0px 15px;
-  background-color: #6f1a07;
-  /* color: #f7f3e3; */
-  color: #ecf0f1;
-  padding: 5px;
-  border-top-right-radius: 8px;
-}
-
-main {
-  background-color: #bd803b;
-}
-
-.nav-item:hover {
-  background-color: #bd803b;
-  cursor: pointer;
-}
-
-/* Dropdown styles */
-
-ul {
-  overflow: hidden;
-  list-style-type: none;
-  padding: 0px;
-}
-
-li a,
-.dropDownBtn {
-  color: white;
-  text-align: center;
-  padding: 7px 16px;
-}
-
-li.dropdown {
-  display: inline-block;
-}
-
-.dropdownContent {
-  display: none;
-  position: absolute;
-  background-color: #bd803b;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-/* Make the dropdowns align with their parent */
-.dropdownContent:nth-child(2) {
-  max-width: 154px;
-  transform: translateX(-5px);
-}
-
-#modernGameDropdown {
-  max-width: 233px;
-  transform: translateX(-5px);
-}
-
-#indieGameDropdown {
-  max-width: 116px;
-  transform: translateX(-5px);
-}
-
-.dropdownContent a {
-  display: block;
-}
-
-.dropdownContent a:hover {
-  background-color: #6f1a07;
-}
-
-li.dropdown:hover .dropdownContent {
-  display: block;
-}
-
-a {
-  text-decoration: none;
-}
+} 
 
 /* Footer styles */
 footer {
@@ -238,32 +155,3 @@ footer{
   background-color: #ECF0F1;
 }
 
-/* CSS Grid Layout */
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-  background-color: #ecf0f1;
-  text-align: center;
-  font-family: kanit;
-}
-
-.classics {
-  grid-column: 1;
-  justify-content: center;
-}
-
-.modern {
-  grid-column: 2;
-  justify-content: center;
-}
-
-.indie {
-  grid-column: 3;
-  justify-content: center;
-}
-
-.wrapper img {
-  width: 100%;
-}

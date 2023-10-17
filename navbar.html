@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Menu Example</title>
+
+    <style>
+      #main {
+        list-style-type: none;
+        list-style-position: inside;
+        margin: 0;
+        padding: 0;
+        float: right;
+      }
+
+      #main > li {
+        font-size: 1em;
+        font-family: sans-serif;
+        width: 150px;
+        text-align: center;
+        background-color: #6f1a07;
+        padding: 20px;
+        border: solid thin #f7f3e3;
+        border-collapse: collapse;
+        float: left;
+        border-top-right-radius: 20px;
+        margin-left: 20px;
+      }
+
+      #main ul {
+        display: none;
+      }
+
+      #main ul {
+        list-style-type: none;
+        list-style-position: inside;
+        margin: 0;
+        padding: 20px;
+      }
+
+      #main ul li {
+        font-family: sans-serif;
+        width: 100px;
+        text-align: center;
+        background-color: #a8763e;
+        padding: 10px;
+        border: solid thin #f7f3e3;
+        border-collapse: collapse;
+      }
+
+      #main > li:hover > ul {
+        display: block;
+      }
+
+      a {
+        text-decoration: none;
+        font-family: kanit;
+        color: #ecf0f1;
+      }
+
+      a:hover {
+        color: #2b2118;
+        font-weight: bold;
+        font-size: 1.1em;
+      }
+    </style>
+        <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1>Menu Example</h1>
+
+    <p>
+      Here is a simple menu with submenus. To make a vertical menu, simply
+      remove the float.
+    </p>
+
+    <ul id="main">
+      <li class="nav-item"><a href="./feedback.html">Feedback</a></li>
+      <li>
+        <a href="pageOne.html">Classics</a>
+        <ul>
+          <li><a href="./category1/items/donkeyKong.html">Donkey Kong</a></li>
+          <li><a href="./category1/items/megaMan.html">Mega Man</a></li>
+          <li><a href="./category1/items/pacMan.html">Pac-Man</a></li>
+          <li><a href="./category1/items/sonicTheHedgehog.html">Sonic the Hedgehog</a></li>
+          <li><a href="./category1/items/streetFighter.html">Street Fighter II</a></li>
+          <li><a href="./category1/items/superMarioBros.html">Super Mario Bros</a></li>
+          <li><a href="./category1/items/tetris.html">Tetris</a></li>
+          <li><a href="./category1/items/legendOfZelda.html">The Legend of Zelda</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="pageTwo.html">Modern AAA</a>
+        <ul>
+          <li>
+            <a href="./category2/items/battlefield4.html">Battlefield 4</a>
+          </li>
+          <li>
+            <a href="./category2/items/counterStrikeGlobalOffensive.html"
+              >Counter Strike Global Offensive</a
+            >
+          </li>
+          <li><a href="./category2/items/destiny.html">Destiny</a></li>
+          <li>
+            <a href="./category2/items/grandTheftAuto5.html"
+              >Grand Theft Auto 5</a
+            >
+          </li>
+          <li>
+            <a href="./category2/items/rainbowSixSiege.html"
+              >Rainbow Six Siege</a
+            >
+          </li>
+          <li>
+            <a href="./category2/items/rocketLeague.html">Rocket League</a>
+          </li>
+          <li><a href="./category2/items/rust.html">Rust</a></li>
+          <li><a href="./category2/items/valorant.html">Valorant</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="pageThree.html">Indie</a>
+        <ul>
+          <li><a href="./category3/items/battleBits.html">Battle Bits</a></li>
+          <li><a href="./category3/items/celeste.html">Celeste</a></li>
+          <li><a href="./category3/items/cuphead.html">Cuphead</a></li>
+          <li>
+            <a href="./category3/items/gunfireReborn.html">Gunfire Reborn</a>
+          </li>
+          <li>
+            <a href="./category3/items/hollowKnight.html">Hollow Knight</a>
+          </li>
+          <li>
+            <a href="./category3/items/stardewValley.html">Stardew Valley</a>
+          </li>
+          <li><a href="./category3/items/terraria.html">Terraria</a></li>
+          <li><a href="./category3/items/valheim.html">Valheim</a></li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

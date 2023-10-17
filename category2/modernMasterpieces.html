@@ -5,93 +5,297 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../assets/homepage.css" />
     <link rel="stylesheet" href="../assets/category2.css" />
-    <script src="https://kit.fontawesome.com/ae9a5f9792.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/ae9a5f9792.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../RAWG.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Josefin+Sans:ital,wght@0,300;1,400&family=Montserrat:wght@500&family=Overpass&family=Pixelify+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
     <title>Modern "AAA" Masterpieces</title>
   </head>
 
   <body>
     <header class="flex-container">
-      <img
-        src="../assets/images/logo.png"
-        id="logo"
-        alt="Gamer's Grimoire Logo"
-      />
+      <a href="../homepage.html"
+        ><img
+          src="../assets/images/logo.png"
+          id="logo"
+          alt="Gamer's Grimoire Logo"
+      /></a>
       <h1 id="title">Gamer's Grimoire</h1>
-      <ul class="nav-container">
-         <li class="nav-item"><a href="../feedback.html">Feedback</a></li>
-        <li class="nav-item dropdown">
-          <a href="../category1/certifiedClassics.html" class="dropDownBtn"
-            >Certified Classics</a
-          >
-          <div class="dropdownContent">
-            <a href="../category1/items/donkeyKong.html">Donkey Kong</a>
-            <a href="../category1/items/megaMan.html">Mega Man</a>
-            <a href="../category1/items/pacMan.html">Pac-Man</a>
-            <a href="../category1/items/sonicTheHedgehog.html"
-              >Sonic the Hedgehog</a
-            >
-            <a href="../category1/items/streetFighter.html"
-              >Street Fighter II</a
-            >
-            <a href="../category1/items/superMarioBros.html"
-              >Super Mario Bros</a
-            >
-            <a href="../category1/items/tetris.html">Tetris</a>
-            <a href="../category1/items/legendOfZelda.html"
-              >The Legend of Zelda</a
-            >
-          </div>
+      <ul id="main">
+        <li class="nav-item"><a href=".//feedback.html">Feedback</a></li>
+        <li>
+          <a href="../category1/certifiedClassics.html">Classics</a>
+          <ul>
+            <li>
+              <a href="../category1/items/donkeyKong.html">Donkey Kong</a>
+            </li>
+            <li>
+              <a href="../category1/items/megaMan.html">Mega Man</a>
+            </li>
+            <li>
+              <a href="../category1/items/pacMan.html">Pac-Man</a>
+            </li>
+            <li>
+              <a href="../category1/items/sonicTheHedgehog.html"
+                >Sonic the Hedgehog</a
+              >
+            </li>
+            <li>
+              <a href="../category1/items/streetFighter.html"
+                >Street Fighter II</a
+              >
+            </li>
+            <li>
+              <a href="../category1/items/superMarioBros.html"
+                >Super Mario Bros</a
+              >
+            </li>
+            <li>
+              <a href="../category1/items/tetris.html">Tetris</a>
+            </li>
+            <li>
+              <a href="../category1/items/legendOfZelda.html"
+                >The Legend of Zelda</a
+              >
+            </li>
+          </ul>
         </li>
-        <li class="nav-item dropdown">
-          <a href="./modernMasterpieces.html" class="dropDownBtn"
-            ><span>Modern "AAA" Masterpieces</span></a
-          >
-          <div class="dropdownContent" id="modernGameDropdown">
-            <a href="./items/battlefield4.html">Battlefield 4</a>
-            <a href="./items/counterStrikeGlobalOffensive.html"
-              >Counter Strike Global Offensive</a
-            >
-            <a href="./items/destiny.html">Destiny</a>
-            <a href="./items/grandTheftAuto5.html">Grand Theft Auto 5</a>
-            <a href="./items/rainbowSixSiege.html">Rainbow Six Siege</a>
-            <a href="./items/rocketLeague.html">Rocket League</a>
-            <a href="./items/rust.html">Rust</a>
-            <a href="./items/valorant.html">Valorant</a>
-          </div>
+        <li>
+          <a href="./modernMasterpieces.html">Modern AAA</a>
+          <ul>
+            <li>
+              <a href="./items/battlefield4.html">Battlefield 4</a>
+            </li>
+            <li>
+              <a href="./counterStrikeGlobalOffensive.html"
+                >Counter Strike Global Offensive</a
+              >
+            </li>
+            <li><a href="./items/destiny.html">Destiny</a></li>
+            <li>
+              <a href="./items/grandTheftAuto5.html">Grand Theft Auto 5</a>
+            </li>
+            <li>
+              <a href="./items/rainbowSixSiege.html">Rainbow Six Siege</a>
+            </li>
+            <li>
+              <a href="./items/rocketLeague.html">Rocket League</a>
+            </li>
+            <li><a href="./items/rust.html">Rust</a></li>
+            <li><a href="./items/valorant.html">Valorant</a></li>
+          </ul>
         </li>
-        <li class="nav-item dropdown">
-          <a href="../category3/indieGems.html" class="dropDownBtn"
-            ><span>Indie Gems</span></a
-          >
-          <div class="dropdownContent" id="indieGameDropdown">
-            <a href="../category3/items/battleBits.html">Battle Bits</a>
-            <a href="../category3/items/celeste.html">Celeste</a>
-            <a href="../category3/items/cuphead.html">Cuphead</a>
-            <a href="../category3/items/gunfireReborn.html">Gunfire Reborn</a>
-            <a href="../category3/items/hollowKnight.html">Hollow Knight</a>
-            <a href="../category3/items/stardewValley.html">Stardew Valley</a>
-            <a href="../category3/items/terraria.html">Terraria</a>
-            <a href="../category3/items/valheim.html">Valheim</a>
-          </div>
+        <li>
+          <a href="../category3/indieGems.html">Indie</a>
+          <ul>
+            <li>
+              <a href="../category3/items/battleBits.html">Battle Bits</a>
+            </li>
+            <li><a href="../category3/items/celeste.html">Celeste</a></li>
+            <li><a href="../category3/items/cuphead.html">Cuphead</a></li>
+            <li>
+              <a href="../category3/items/gunfireReborn.html">Gunfire Reborn</a>
+            </li>
+            <li>
+              <a href="../category3/items/hollowKnight.html">Hollow Knight</a>
+            </li>
+            <li>
+              <a href="../category3/items/stardewValley.html">Stardew Valley</a>
+            </li>
+            <li><a href="../category3/items/terraria.html">Terraria</a></li>
+            <li><a href="../category3/items/valheim.html">Valheim</a></li>
+          </ul>
         </li>
       </ul>
     </header>
-    
-        <footer> 
-      <div class="footer.container"> 
-      <div class="socailIcons"> 
-        <a href=""><i class="fa-brands fa-facebook"></i></a>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-youtube"></i></a>
-        <a href=""><i class="fa-brands fa-github"></i></a>
-        <a href=""><i class="fa-brands fa-twitter"></i></a>
+
+    <div class="grid-container">
+      <div class="gameCard one">
+        <div class="gameCardImg">
+          <h2 id="masterpiece1">Battlefield 4</h2>
+          <img
+            src="../assets/Category game pictures/Battlefield4.png"
+            alt="Battlefield 4 Gameplay"
+          />
+        </div>
+        <ul>
+          <li>Publisher: Electronic Arts (EA)</li>
+          <li>Release Date: October 29, 2013</li>
+          <li>Copies Sold: 7 million copies</li>
+          <li>
+          <li class="esrb"></li>
+          <li class="genres"></li>
+          <li class="platforms"></li>
+          <li class="metacritic"></li>
+        </ul>
       </div>
-        
-      
-      <div class="footerBottom">
-        <p>Copyright &copy;2023 all rights reserved. Gamer's Grimoire.</p>
+      <div class="gameCard two">
+        <div class="gameCardImg">
+          <h2>Counter Strike Global Offensive</h2>
+          <img
+            src="../assets/Category game pictures/CSGO.png"
+            alt="CSGO Gameplay"
+          />
+        </div>
+        <ul>
+          <li>Publisher: Valve Corporation and Hidden Path Entertainment</li>
+          <li>Release Date:</li>
+          <li>Copies Sold:</li>
+          <li class="esrb"></li>
+          <li class="genres"></li>
+          <li class="platforms"></li>
+          <li class="metacritic"></li>
+        </ul>
       </div>
-      </footer>
+      <div class="gameCard three">
+        <div class="gameCardImg">
+          <h2>Destiny</h2>
+          <img
+            src="../assets/Category game pictures/Destiny.png"
+            alt="Destiny Gameplay"
+          />
+        </div>
+        <ul>
+          <li>Publisher: Bungie</li>
+          <li>Release Date:</li>
+          <li>Copies Sold:</li>
+          <li class="esrb"></li>
+          <li class="genres"></li>
+          <li class="platforms"></li>
+          <li class="metacritic"></li>
+        </ul>
+      </div>
+      <div class="gameCard four">
+        <div class="gameCardImg">
+          <h2>Grand Theft Auto V</h2>
+          <img
+            src="../assets/Category game pictures/gta5.png"
+            alt="GTA 5 Gameplay"
+          />
+        </div>
+        <ul>
+          <li>Publisher: Rockstar Games</li>
+          <li>Release Date: September 17, 2013</li>
+          <li>Copies Sold:</li>
+          <li class="esrb"></li>
+          <li class="genres"></li>
+          <li class="platforms"></li>
+          <li class="metacritic"></li>
+        </ul>
+      </div>
+      <div class="gameCard five">
+        <div class="gameCardImg">
+          <h2>Rainbow Six Siege</h2>
+          <img
+            src="../assets/Category game pictures/Rainbow6.png"
+            alt="Rainbow Six Seige Gameplay"
+          />
+        </div>
+        <ul>
+          <li>Publisher: Ubisoft</li>
+          <li>Release Date: December 1, 2015</li>
+          <li>Copies Sold:</li>
+          <li class="esrb"></li>
+          <li class="genres"></li>
+          <li class="platforms"></li>
+          <li class="metacritic"></li>
+        </ul>
+      </div>
+      <div class="gameCard six">
+        <div class="gameCardImg">
+          <h2>Rocket League</h2>
+          <img
+            src="../assets/Category game pictures/rocketleague.png"
+            alt="Rocket League Gameplay"
+          />
+        </div>
+        <ul>
+          <li>
+            Publisher(s): Psyonix, Warner Bros. Interactive Entertainment, 505
+            Games
+          </li>
+          <li>Release Date: July 7, 2015</li>
+          <li>Copies Sold:</li>
+          <li class="esrb"></li>
+          <li class="genres"></li>
+          <li class="platforms"></li>
+          <li class="metacritic"></li>
+        </ul>
+      </div>
+      <div class="gameCard seven">
+        <div class="gameCardImg">
+          <h2>Rust</h2>
+          <img
+            src="../assets/Category game pictures/Rust.png.jpg"
+            alt="Rust Gameplay"
+          />
+        </div>
+        <ul>
+          <li>Publisher: Facepunch Studios</li>
+          <li>Release Date: February 8, 2018</li>
+          <li>Copies Sold:</li>
+          <li class="esrb"></li>
+          <li class="genres"></li>
+          <li class="platforms"></li>
+          <li class="metacritic"></li>
+        </ul>
+      </div>
+      <div class="gameCard eight">
+        <div class="gameCardImg">
+          <h2>Valorant</h2>
+          <img
+            src="../assets/Category game pictures/Valorant.png"
+            alt="Valorant Gameplay"
+          />
+        </div>
+        <ul>
+          <li>Publisher: Riot Games</li>
+          <li>Release Date: June 2, 2020</li>
+          <li>Copies Sold:</li>
+          <li class="esrb"></li>
+          <li class="genres"></li>
+          <li class="platforms"></li>
+          <li class="metacritic"></li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer.container">
+        <div class="socailIcons">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+          <a href=""><i class="fa-brands fa-github"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="footerNav">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Review</a></li>
+            <li><a href="">Categories</a></li>
+          </ul>
+        </div>
+        <div class="footerBottom">
+          <p>Copyright &copy;2023 all rights reserved. Gamer's Grimoire.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

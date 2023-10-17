@@ -1,3 +1,5 @@
+/* Form Styles */
+
 h2 {
   margin-top: 15px;
   font-size: 2em;
@@ -26,6 +28,8 @@ h5 {
   display: flex;
   gap: 10px;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 #feedbackSubmitBtn {
@@ -36,3 +40,88 @@ h5 {
   color: #ecf0f1;
   font-weight: bolder;
 }
+
+#email {
+  margin-bottom: 15px;
+}
+
+#itemComment {
+  margin-bottom: 30px;
+}
+
+select option {
+  text-align: center;
+}
+
+ /* Navbar Styles Start */
+      #main {
+        list-style-type: none;
+        list-style-position: inside;
+        margin: 0;
+        padding: 0;
+        float: right;
+      }
+
+      #main > li {
+        position: relative;
+        font-size: 1em;
+        font-family: sans-serif;
+        width: 150px;
+        text-align: center;
+        background-color: #6f1a07;
+        padding: 7px 5px;
+        border: solid thin #f7f3e3;
+        border-collapse: collapse;
+        float: left;
+        border-top-right-radius: 20px;
+        margin-left: 25px;
+      }
+
+      #main > li:last-child {
+        margin-right: 25px;
+      }
+
+      #main li > ul {
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        /* left: 8; */
+        display: none;
+        background-color: #6f1a07;
+        transform: translateX(-3.2%);
+        z-index: 1000;
+      }
+
+      #main ul {
+        list-style-type: none;
+        list-style-position: inside;
+        margin: 0;
+        padding: 20px;
+      }
+
+      #main ul li {
+        /* width: 100px; */
+        text-align: center;
+        background-color: #a8763e;
+        padding: 10px;
+        border: solid thin #f7f3e3;
+        border-collapse: collapse;
+
+      }
+
+      #main > li:hover > ul {
+        display: block;
+      }
+
+      a {
+        text-decoration: none;
+        font-family: kanit;
+        color: #ecf0f1;
+      }
+
+      header a:hover {
+        color: #2b2118;
+        font-weight: bold;
+      }
+      /* Navbar Styles End */
+
