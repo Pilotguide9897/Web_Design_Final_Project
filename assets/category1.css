@@ -198,6 +198,14 @@
 .footerBottom p{
     color: #6f1a07;
 }
+
+.maininfo {
+  border-top: solid 2px #6f1a07;
+  border-bottom: solid 2px #6f1a07;
+  float: left;
+  font-family: 'Roboto Mono', monospace;
+}
+
 ul{color: #ecf0f1;}
 footer{
     background-color: #ECF0F1;
