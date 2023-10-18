@@ -85,15 +85,7 @@ footer{
     border: solid 1px #3f334d;
     height: 1px;
   }
-  .vlr {
-    border-left: 2px solid #7d8491;
-    height: 330px;
-    position: absolute;
-    left: 40%;
-    margin-left: 3px;
-    top: 0;
-    margin-top: 205px;
-  }
+  
   h3 {
     color: #7d8491;
   }
@@ -255,48 +247,6 @@ footer{
   ul {
     color: #3f334d;
   }
-  .vlr {
-    border-left: 2px solid #3f334d;
-    height: 330px;
-    position: absolute;
-    left: 40%;
-    margin-left: 3px;
-    top: 0;
-    margin-top: 205px;
-  }
-  .vlzl {
-    border-left: 2px solid #3f334d;
-    height: 390px;
-    position: absolute;
-    left: 40%;
-    margin-left: 3px;
-    top: 0;
-    margin-top: 205px;
-  }
-  .vlmm {
-    border-left: 2px solid #3f334d;
-    height: 320px;
-    position: absolute;
-    left: 40%;
-    margin-left: 3px;
-    top: 0;
-    margin-top: 205px;
-  }
-  .vlsm {
-    border-left: 2px solid #3f334d;
-    height: 300px;
-    position: absolute;
-    left: 40%;
-    margin-left: 3px;
-    top: 0;
-    margin-top: 205px;
-  }
-  .vltt {
-    border-left: 2px solid #3f334d;
-    height: 350px;
-    position: absolute;
-    left: 40%;
-    margin-left: 3px;
-    top: 0;
-    margin-top: 210px;
-  }
+  
+  
+ 
