@@ -1,6 +1,4 @@
-* {
-  font-family: kanit;
-}
+
 img {
   width: 600px;
   margin-left: 15px;
@@ -9,30 +7,36 @@ img {
   padding: 15px;
 }
 p {
-  color: #6f1a07;
+  color: #14213d;
 }
 h2 {
-  color: #6f1a07;
+  color: #14213d;
   font-weight: bold;
   font-style: italic;
+  font-family: "Bebas Neue", sans-serif;
 }
 .maininfo {
-  border-top: solid 2px #6f1a07;
-  border-bottom: solid 2px #6f1a07;
+  border-top: solid 2px #FCA311;
+  border-bottom: solid 2px #FCA311;
   float: left;
+  font-family: "Raleway", sans-serif;
+}
+.secondaryInfo {
+  font-family: "Raleway", sans-serif;
 }
 hr {
-  background-color: #6f1a07;
-  border: solid 1px #6f1a07;
+  background-color: #FCA311;
+  border: solid 1px #FCA311;
   height: 1px;
 }
 h3 {
-  color: #6f1a07;
+  color: #14213d;
+  font-family: "Bebas Neue", sans-serif;
 }
 .rust {
   padding-bottom: 20px;
 }
-.vl {
+/* .vl {
   border-left: 2px solid #6f1a07;
   height: 240px;
   position: absolute;
@@ -73,4 +77,4 @@ h3 {
   margin-left: 3px;
   top: 0;
   margin-top: 230px;
-}
+} */
