@@ -69,7 +69,6 @@
         padding: 10px;
         border: solid thin #f7f3e3;
         border-collapse: collapse;
-
       }
 
       #main > li:hover > ul {
@@ -256,7 +255,7 @@
       }
 
       .carousel::after,
-      .carouselPrev, 
+      .carouselPrev,
       .carouselNext {
         position: absolute;
         top: 0;
@@ -328,7 +327,21 @@
         background-image: url(./assets/images/indieSpirit.png);
         background-size: cover;
       }
-      /*Carousel Styles End */
+
+      .carouselLink {
+        display: block;
+        height: 100%;
+        text-decoration: none;
+        position: relative;
+        z-index: 9999;
+        font-family: kanit;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 3.5em;
+        color: #6f1a07;
+        font-weight: bold;
+      }
+
     </style>
   </head>
   <body>
@@ -433,6 +446,7 @@
     <section class="carousel">
       <ol class="carouselViewport">
         <li id="carouselSlide1" tabindex="0" class="carouselSlide">
+          <a href="./category1/certifiedClassics.html" class="carouselLink">Certified Classics</a>
           <div class="carouselSnapper">
             <a href="#carouselSlide3" class="carouselPrev"
               >Go to previous slide</a
@@ -442,6 +456,7 @@
         </li>
 
         <li id="carouselSlide2" tabindex="1" class="carouselSlide">
+          <a href="./category2/modernMasterpieces.html" class="carouselLink">Modern Masterpieces</a>
           <div class="carouselSnapper">
             <a href="#carouselSlide1" class="carouselPrev"
               >Go to previous slide</a
@@ -451,6 +466,7 @@
         </li>
 
         <li id="carouselSlide3" tabindex="2" class="carouselSlide">
+          <a href="./category3/indieGems.html" class="carouselLink">Indie Gems</a>
           <div class="carouselSnapper">
             <a href="#carouselSlide2" class="carouselPrev"
               >Go to previous slide</a
@@ -486,11 +502,21 @@
     <footer>
       <div class="footer.container">
         <div class="socailIcons">
-          <a href=""><i class="fa-brands fa-facebook"></i></a>
-          <a href=""><i class="fa-brands fa-instagram"></i></a>
-          <a href=""><i class="fa-brands fa-youtube"></i></a>
-          <a href=""><i class="fa-brands fa-github"></i></a>
-          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.facebook.com/"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="http://www.instagram.com/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="http://www.youtube.com/"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+          <a href="http://www.github.com/"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://twitter.com/i/flow/login"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
         </div>
         <div class="footerNav">
           <ul>
@@ -504,6 +530,6 @@
           <p>Copyright &copy;2023 all rights reserved. Gamer's Grimoire.</p>
         </div>
       </div>
-      </footer>
+    </footer>
   </body>
 </html>
